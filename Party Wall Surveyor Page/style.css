@@ -1,0 +1,239 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#showcase {
+    text-align: center;
+    margin-top: 5vh; 
+}
+
+#bg-image {
+    display: block;
+    margin: auto;
+    height: 5vh;
+    width: 100vw;
+    background: url("https://melbournechapter.net/images/skyline-clipart-city-outline-4.png") bottom no-repeat;
+    background-size: 20vh auto;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    height: 2.5rem;
+    padding-top: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    color: black;
+    border: solid white 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+    background: grey;
+    opacity: .5;
+}
+
+#content-wrap {
+    padding: 2rem;
+}
+
+#party-header {
+    font-size: 2.2rem;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#architecture-header {
+    font-size: 2.2rem;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#split-wrapper {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: white;
+}
+
+.split.left .button:hover {
+    background-color: var(--left-button-hover-color);
+    border-color: var(--left-button-hover-color);
+}
+
+.split.right .button:hover {
+    background-color: var(--right-button-hover-color);
+    border-color: var(--right-button-hover-color);
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border: solid 2px black;
+}
+
+.split.left {
+    left: 0;
+    background: url("images/partywall.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+.split.left:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: lightgrey;
+    opacity: .3;
+}
+
+.split.right {
+    right: 0;
+    background: url("images/architecture.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+.split.right:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: lightgrey;
+    opacity: .3;
+}
+
+.split.left, .split.right, .split.left:before, .split.right:before {
+    transition: 750ms all ease-in-out;
+}
+
+.hover-left .left {
+    width: 75%;
+}
+
+.hover-left .right {
+    width: 25%;
+}
+
+.hover-left .right:before {
+    z-index: 2;
+}
+
+.hover-right .right {
+    width: 75%;
+}
+
+.hover-right .left {
+    width: 25%;
+}
+
+.hover-right .left:before {
+    z-index: 2;
+}
+
+
+.box-right {
+    color: white;
+    background-color: #2690d4;
+    float: right;
+    max-width: 50vw;
+    min-height: 150px;
+    
+}
+
+.box-left {
+    color: white;
+    background-color: #5d5d5d;
+    max-width: 50vw;
+    min-height: 150px;
+}
+/*
+#section-d .box {
+	color: white;
+    background-color: #5d5d5d;
+    float: left;
+    width: 50vw;
+    min-height: 150px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+#section-d .box:first-child {
+	background: #2690d4;
+    float: right;
+    max-width: 50vw;
+    max-height: 200px;
+}
+*/
+
+
+
+@media(max-width: 800px) {
+    #party-header, #architecture-header {
+        font-size: 1.5rem;
+        white-space: wrap;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        white-space: wrap;
+    }
+
+    .button {
+        width: 12rem;
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    
+    
+    
+}
+
+@media(max-height: 700px) {
+    .btn {
+        top: 50%;
+    }
+
+    #party-header, #architecture-header {
+        top: 20%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
